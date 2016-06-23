@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="statistic-flume-mananger">
+    <wb-module deploy-name="statistic-flume-manager">
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
-        <property name="context-root" value="statistic-flume-mananger"/>
-        <property name="java-output-path" value="/statistic-flume-mananger/target/classes"/>
+        <property name="java-output-path" value="/statistic-flume-manager/target/classes"/>
+        <property name="context-root" value="statistic-flume-manager"/>
     </wb-module>
 </project-modules>

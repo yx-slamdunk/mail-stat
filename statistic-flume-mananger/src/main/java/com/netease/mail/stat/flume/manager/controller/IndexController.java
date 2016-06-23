@@ -1,5 +1,5 @@
 /**
- * @(#)IndexController.java, 2016Äê6ÔÂ20ÈÕ. 
+ * @(#)IndexController.java, 2016ï¿½ï¿½6ï¿½ï¿½20ï¿½ï¿½. 
  * 
  * Copyright 2016 Netease, Inc. All rights reserved.
  * NETEASE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
@@ -11,17 +11,17 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @author hzyangxiong2014@corp.netease.com
  */
 @Controller
+@RequestMapping("/manager")
 public class IndexController {
-    @RequestMapping(value = "index")
-    public ModelAndView index(HttpServletRequest request,
-        HttpServletResponse response) {
-        ModelAndView mv = new ModelAndView("Welcom to statistic flume manager!");
-        return mv;
+
+    @RequestMapping(value = "/index")
+    public String index(HttpServletRequest request, HttpServletResponse response) {
+        //ModelAndView mv = new ModelAndView("Welcom to statistic flume manager!");
+        return "index";
     }
 }

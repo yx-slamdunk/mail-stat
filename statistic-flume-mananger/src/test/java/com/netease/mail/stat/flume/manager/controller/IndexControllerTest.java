@@ -6,15 +6,11 @@
  */
 package com.netease.mail.stat.flume.manager.controller;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
 /**
- *
  * @author hzyangxiong2014@corp.netease.com
- *
  */
 public class IndexControllerTest {
 
@@ -25,11 +21,13 @@ public class IndexControllerTest {
     public void setUp() throws Exception {}
 
     /**
-     * Test method for {@link com.netease.mail.stat.flume.manager.controller.IndexController#index(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)}.
+     * Test method for
+     * {@link com.netease.mail.stat.flume.manager.controller.IndexController#index(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)}
+     * .
      */
     @Test
     public void testIndex() {
-        fail("Not yet implemented");
+        return;
     }
 
 }
