@@ -7,16 +7,13 @@
 package com.netease.mail.stat.flume.manager.model;
 
 /**
- *
  * @author hzyangxiong2014@corp.netease.com
- *
  */
 public class FlumeSerial {
     private String name;
-    
-    public String getName(){
+
+    public String getName() {
         return name;
     };
-    
-    public List<>
+
 }
