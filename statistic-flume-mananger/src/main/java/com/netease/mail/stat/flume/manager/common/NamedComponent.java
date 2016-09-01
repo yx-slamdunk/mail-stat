@@ -7,28 +7,23 @@
 package com.netease.mail.stat.flume.manager.common;
 
 /**
- *
+ * 命名组件
+ * 
  * @author hzyangxiong2014@corp.netease.com
- *
  */
-public class NamedComponent extends Component implements NamedAware {
+public abstract class NamedComponent extends Component implements NamedAware {
 
-    /* (non-Javadoc)
-     * @see com.netease.mail.stat.flume.manager.common.NamedAware#getName()
+    /**
+     * 组件名称
      */
-    @Override
-    public String getName() {
-        // TODO Auto-generated method stub
-        return null;
+    protected String name;
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    /* (non-Javadoc)
-     * @see com.netease.mail.stat.flume.manager.common.NamedAware#setName(java.lang.String)
-     */
-    @Override
-    public void setName(String name) {
-        // TODO Auto-generated method stub
-
+    public String getName() {
+        return this.name;
     }
 
 }

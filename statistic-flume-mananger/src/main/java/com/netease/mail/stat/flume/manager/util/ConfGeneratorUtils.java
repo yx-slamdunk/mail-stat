@@ -11,6 +11,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.Velocity;
+
 /**
  * @author hzyangxiong2014@corp.netease.com
  */
@@ -34,6 +37,15 @@ public class ConfGeneratorUtils {
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader(resource));
+
         } catch (FileNotFoundException e) {}
+
+        //初始化模板引擎
+        Velocity.init("src/velocity.properties");
+        //获取VelocityContext
+        VelocityContext context = new VelocityContext();
+        //为Context设置变量
+        context.put("content", "HelloWorld");
+        context.put("who", "arthinking");
     }
 }
